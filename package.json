@@ -1,0 +1,44 @@
+{
+  "name": "@viccsen/file-detect",
+  "version": "1.0.2",
+  "description": "detect target file in project",
+  "homepage": "https://github.com/viccsen/file-detect#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viccsen/file-detect"
+  },
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "bin": {
+    "file-detect": "./bin/file-detect.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "author": "viccsen <viccsen@163.com> ",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "cfonts": "^3.2.0",
+    "chalk": "^4",
+    "commander": "^11.0.0",
+    "ora": "^5.4.1",
+    "pdfkit": "^0.13.0",
+    "pdfkit-table": "^0.1.99",
+    "semver": "^7.5.4",
+    "table": "^6.8.1",
+    "yargs-parser": "^21.1.1"
+  },
+  "devDependencies": {
+    "babel-preset-minify": "^0.5.2",
+    "father": "^4.3.1"
+  },
+  "packageManager": "pnpm@8.6.7"
+}
